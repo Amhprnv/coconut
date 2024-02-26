@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457601325035",
+    "project_id": "coconut-258ad",
+    "storage_bucket": "coconut-258ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457601325035:android:e9df716b0087dbf7222bae",
+        "android_client_info": {
+          "package_name": "com.example.coconut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpiohpYNOGNHj4aulCpQKrS9VpC-eApqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
