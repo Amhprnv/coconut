@@ -40,11 +40,11 @@ dependencies:
   image_cropper: ^5.0.1
   firebase_core: ^2.24.2
   cloud_firestore: ^4.15.5
-  firebase_auth: ^4.17.5
+  firebase_auth: ^4.17.7
   firebase_database: ^10.4.6
   firebase_storage: ^11.6.6
   firebase_ml_model_downloader: ^0.2.4+13
- 
+  image: ^4.1.7
   tflite_flutter: ^0.10.4
   google_ml_kit: ^0.16.3
   

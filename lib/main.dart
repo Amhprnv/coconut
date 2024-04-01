@@ -4,7 +4,6 @@ import 'package:coconut/screens/result_page.dart';
 import 'package:coconut/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +14,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         scaffoldBackgroundColor: Color(0xff0E1D3E),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xff0E1D3E),
           iconTheme: IconThemeData(
             color: Colors.white,
@@ -44,7 +43,11 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: SplashScreen(), // Show splash screen initially
+      routes: {
+        '/home': (context) => HomePage(),
+
+      },
     );
   }
 }
